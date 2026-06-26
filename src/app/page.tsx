@@ -1,30 +1,13 @@
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger
-} from "@/components/ui/navigation-menu";
-import Link from "next/link"
+import Hero from "@/components/section/Hero";
+import About from "@/components/section/About";
 
 export default function Home() {
   return (
-    <div>
-      <NavigationMenu>
-        <NavigationMenuList>
-          <NavigationMenuItem>
-            <Link href="/home">Home</Link>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>About</NavigationMenuTrigger>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <Link href="/contact">Contact</Link>
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu>
-
+    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/10">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
+        <Hero/>
+        <About/>
+      </main>
     </div>
   );
 }

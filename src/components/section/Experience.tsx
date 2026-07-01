@@ -3,20 +3,28 @@ import { Badge } from "../ui/badge";
 
 const roles = [
     {
-        title: "Software Engineer",
-        company: "Company Name",
+        title: "System Developer",
+        company: "PT Sat Nusapersada Tbk",
         period: "2023 — Present",
-        description:
-            "Describe your scope, the systems you own, and a measurable win. Replace with your real role.",
-        stack: ["Next.js", "C#", ".NET Core", "SQL Server"],
+        points: [
+            "API Design & Integration: Architect and develop robust RESTful APIs and interfaces using C# .NET Core & Python to seamlessly integrate internal manufacturing systems with third-party customer applications.",
+            "Process Automation: Design and implement automation workflows for reporting and data integration using C# and Python, eliminating repetitive tasks and reducing manual processing time by 75%.",
+            "Full-Stack Modernization: Maintain and scale a critical manufacturing execution system utilizing Python (Backend), React.js (Frontend), and C# desktop applications, ensuring high availability on the factory floor.",
+            "DevOps & Cloud Native: Containerize applications using Docker and orchestrate deployments via Kubernetes",
+            "Code Quality: Implement rigorous automated testing by writing comprehensive unit tests to ensure high code coverage, reliability, and regression-free deployments.",
+        ],
+        stack: ["C# .NET", "Python", "React.js", "Docker", "Kubernetes"],
     },
     {
         title: "Junior Developer",
-        company: "Previous Company",
-        period: "2021 — 2023",
-        description:
-            "Focus on growth and shipped features. What did you learn, and what did you deliver?",
-        stack: ["React", "Node.js", "PostgreSQL"],
+        company: "PT Sat Nusapersada Tbk",
+        period: "2019 — 2022",
+        points: [
+            "Desktop Application Support: Maintained and engineered new features for a legacy C#-based desktop manufacturing system, extending its lifecycle and stability.",
+            "Database & Query Optimization: Wrote and optimized complex SQL queries and stored procedures in SQL Server to retrieve critical manufacturing data for cross-functional teams and user requests.",
+            "Technical Support & Troubleshooting: Provided tier-2 technical support, rapidly diagnosing and resolving software issues to minimize downtime in production environments.",
+        ],
+        stack: ["C#", "SQL Server"],
     },
 ];
 
@@ -49,10 +57,18 @@ export default function Experience() {
                                     {role.period}
                                 </span>
                             </div>
-                            <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
-                                {role.description}
-                            </p>
-                            <div className="flex flex-wrap gap-2">
+                            <ul className="space-y-1.5 max-w-2xl">
+                                {role.points.map((point, i) => (
+                                    <li
+                                        key={i}
+                                        className="flex gap-2 text-sm text-muted-foreground leading-relaxed"
+                                    >
+                                        <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-muted-foreground/50" />
+                                        {point}
+                                    </li>
+                                ))}
+                            </ul>
+                            <div className="flex flex-wrap gap-2 pt-1">
                                 {role.stack.map((tech) => (
                                     <Badge
                                         key={tech}

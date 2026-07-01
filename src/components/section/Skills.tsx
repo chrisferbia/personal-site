@@ -3,14 +3,14 @@ import { Badge } from "../ui/badge";
 
 const skillGroups = [
     {
-        icon: <Layout className="h-5 w-5 text-primary" />,
-        title: "Frontend",
-        skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "HTML5", "CSS3"],
-    },
-    {
         icon: <Server className="h-5 w-5 text-primary" />,
         title: "Backend",
-        skills: ["C#", ".NET Core", "Node.js", "REST APIs", "GraphQL"],
+        skills: ["C# / .NET", "ASP.NET Core", "Python", "Django REST Framework"],
+    },
+    {
+        icon: <Layout className="h-5 w-5 text-primary" />,
+        title: "Frontend",
+        skills: ["React.js", "Next.js"],
     },
     {
         icon: <Database className="h-5 w-5 text-primary" />,
@@ -20,7 +20,7 @@ const skillGroups = [
     {
         icon: <Wrench className="h-5 w-5 text-primary" />,
         title: "DevOps & Tools",
-        skills: ["Docker", "Git", "GitHub Actions", "VS Code"],
+        skills: ["Docker", "Kubernetes", "Git"],
     },
 ];
 

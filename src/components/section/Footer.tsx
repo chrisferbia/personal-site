@@ -13,8 +13,8 @@ export default function Footer() {
                 <div className="space-y-2">
                     <span className="font-semibold text-foreground">Chris Ferbianto</span>
                     <p className="text-sm text-muted-foreground max-w-sm">
-                        Full-Stack Developer building fast, accessible, and thoughtfully
-                        designed web applications.
+                        Software developer focused on backend systems with C# and Python,
+                        building web and desktop applications.
                     </p>
                 </div>
 

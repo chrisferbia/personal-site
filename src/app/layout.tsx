@@ -16,13 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chris Ferbianto — Full-Stack Developer",
+  title: "Chris Ferbianto — Software Developer",
   description:
-    "Full-Stack Developer building fast, accessible, and thoughtfully designed web applications with Next.js, React, and .NET.",
+    "Software developer with 7 years of experience building web and desktop applications, focused on backend systems with C# and Python.",
   openGraph: {
-    title: "Chris Ferbianto — Full-Stack Developer",
+    title: "Chris Ferbianto — Software Developer",
     description:
-      "Full-Stack Developer building fast, accessible, and thoughtfully designed web applications with Next.js, React, and .NET.",
+      "Software developer with 7 years of experience building web and desktop applications, focused on backend systems with C# and Python.",
     type: "website",
   },
 };

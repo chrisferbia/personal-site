@@ -8,25 +8,24 @@ export default function Hero() {
                     Chris Ferbianto
                 </h1>
                 <p className="text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
-                    Full-Stack Developer
+                    Software Developer
                 </p>
             </div>
 
-            {/* TODO: update your location and years of experience */}
             <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1.5">
                     <MapPin className="h-4 w-4" />
-                    Your City, Country
+                    Batam, Indonesia
                 </span>
                 <span aria-hidden className="text-muted-foreground/40">&bull;</span>
                 <span className="flex items-center gap-1.5">
                     <Briefcase className="h-4 w-4" />
-                    5+ years experience
+                    7 years experience
                 </span>
             </div>
 
             <p className="max-w-2xl leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-                I build fast, beautifully designed, and highly accessible web applications using Next.js and Tailwind CSS, bridging clean interfaces with robust backend architecture.
+                Software developer focused on backend systems with C# and Python, building web and desktop applications.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">

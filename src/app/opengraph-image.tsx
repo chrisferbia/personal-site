@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 // Route segment config
-export const alt = "Chris Ferbianto — Full-Stack Developer";
+export const alt = "Chris Ferbianto — Software Developer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -50,7 +50,7 @@ export default function Image() {
                         marginTop: 8,
                     }}
                 >
-                    Full-Stack Developer
+                    Software Developer
                 </div>
             </div>
         ),

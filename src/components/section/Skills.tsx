@@ -198,11 +198,11 @@ export default function Skills() {
                 </p>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="columns-1 gap-4 sm:columns-2">
                 {skillGroups.map((group) => (
                     <div
                         key={group.title}
-                        className="p-5 rounded-xl border border-muted/60 bg-card text-card-foreground shadow-xs transition-all hover:shadow-md hover:border-primary/20"
+                        className="mb-4 break-inside-avoid p-5 rounded-xl border border-muted/60 bg-card text-card-foreground shadow-xs transition-all hover:shadow-md hover:border-primary/20"
                     >
                         <div className="flex items-center gap-3 mb-4">
                             <div className="p-2 rounded-lg bg-primary/10">
